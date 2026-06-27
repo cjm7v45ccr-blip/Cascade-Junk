@@ -19,7 +19,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     shortDesc: "Couches, mattresses, desks, and more.",
     fullDesc: "Got an old couch or heavy mattress you need gone? We'll carefully remove all types of furniture from anywhere in your home, and we're always careful with your walls and floors.",
     iconName: "Sofa",
-    imageUrl: "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/src/assets/images/junk_removal_furniture_1782588872739.jpg",
     commonItems: ["Sofas & Couches", "Mattresses", "Desks & Tables", "Dressers & Wardrobes"],
     startingPrice: "$75+"
   },
