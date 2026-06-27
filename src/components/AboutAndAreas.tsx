@@ -89,7 +89,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-navy aspect-4/3 relative flex flex-col items-center justify-center p-8 text-center">
                  <Mountain className="w-24 h-24 text-orange-highlight mb-4" />
                  <h2 className="text-3xl font-black text-white mb-2">Locally Owned</h2>
-                 <p className="text-emerald-100 font-medium">Serving the Wenatchee Valley</p>
+                 <p className="text-emerald-100 font-medium">Serving the Wenatchee Valley Since 2026</p>
               </div>
             </motion.div>
 

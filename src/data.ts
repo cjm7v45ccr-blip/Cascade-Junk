@@ -73,7 +73,7 @@ export const SERVICE_AREAS_TOWNS = [
 export const FAQ_QUESTIONS: FaqItem[] = [
   {
     question: "How do you price your junk removal services?",
-    answer: "Our pricing is volume-based, meaning you only pay for the amount of space your items take up in our truck. Prices include labor, hauling, and disposal fees. We provide a firm, free, no-obligation estimate on-site before we begin any work.",
+    answer: "Our pricing is volume-based, meaning you only pay for the amount of space your items take up in our truck. Prices include labor, hauling, and disposal fees. We provide a firm estimate on-site before we begin any work.",
     category: "Pricing"
   },
   {
