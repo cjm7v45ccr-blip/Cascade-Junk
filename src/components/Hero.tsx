@@ -17,8 +17,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
           <path d="M0,224L48,197.3C96,171,192,117,288,117.3C384,117,480,171,576,197.3C672,224,768,224,864,197.3C960,171,1056,117,1152,101.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
       </div>
-      <div className="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-[#00BFA5]/15 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-0 -ml-32 w-96 h-96 rounded-full bg-[#0A3D2A]/10 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -52,22 +50,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
               Same-day pickup across Wenatchee. Call Marco. Not a franchise. Not a call center. Just local junk removal when you need it.
             </p>
 
-            {/* Service Highlights Pills */}
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-3 py-1"
-            >
-              {[
-                "Wenatchee", "East Wenatchee", "Fast & Reliable", BUSINESS_INFO.hours
-              ].map((pill, idx) => (
-                <div key={idx} className="flex items-center gap-2 bg-white px-3.5 py-2.5 rounded-xl border border-gray-200 shadow-2xs text-xs sm:text-sm font-bold text-neutral-dark">
-                  <CheckCircle2 className="w-4 h-4 text-navy shrink-0" />
-                  <span className="truncate">{pill}</span>
-                </div>
-              ))}
-            </motion.div>
 
             {/* Contact Buttons */}
             <motion.div 
@@ -111,6 +93,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="lg:col-span-5 relative mt-8 lg:mt-0"
           >
+            <div className="rounded-3xl shadow-2xl border-4 border-white bg-white aspect-square relative flex flex-col p-8 justify-center">
+              <div className="text-navy font-black text-2xl mb-6">Simple Pricing</div>
+              <div className="space-y-4 text-neutral-dark font-medium text-sm">
+                <div className="flex justify-between border-b border-gray-100 pb-3"><span>Single Item</span><span className="font-bold">From $50</span></div>
+                <div className="flex justify-between border-b border-gray-100 pb-3"><span>Half Truck</span><span className="font-bold">$150+</span></div>
+                <div className="flex justify-between pb-3"><span>Full Truck</span><span className="font-bold">$300+</span></div>
+              </div>
+            </div>
           </motion.div>
 
         </div>

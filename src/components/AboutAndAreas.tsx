@@ -24,9 +24,6 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               transition={{ duration: 0.6 }}
               className="text-left space-y-6"
             >
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-100 text-forest text-xs font-black uppercase tracking-wider">
-                <Mountain className="w-3.5 h-3.5 text-orange-highlight" /> Who We Are
-              </div>
               <h2 className="text-3xl sm:text-5xl font-display font-black text-[#1F2937] tracking-tight">
                 About Cascade Junk Removal
               </h2>
@@ -95,9 +92,6 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto mb-12"
           >
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white text-[#0A3D2A] text-xs font-black uppercase tracking-wider mb-3 border border-gray-200 shadow-2xs">
-              <MapPin className="w-3.5 h-3.5 text-orange-highlight" /> Where We Haul
-            </div>
             <h2 className="text-3xl sm:text-5xl font-display font-black text-[#1F2937] tracking-tight">
               Cascade Towns & Communities We Serve
             </h2>

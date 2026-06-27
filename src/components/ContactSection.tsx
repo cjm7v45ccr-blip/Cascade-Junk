@@ -46,9 +46,6 @@ Preferred Date: ${formData.date}
 
   return (
     <section id="contact" className="py-24 bg-forest text-white relative overflow-hidden scroll-mt-20">
-      {/* Decorative Blob */}
-      <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-orange-highlight/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute top-20 right-0 w-96 h-96 bg-navy/40 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
