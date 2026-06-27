@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Truck, Phone, Calendar, Menu, X, ShieldCheck, Clock, Recycle } from 'lucide-react';
+import { Truck, Phone, Calendar, Menu, X, ShieldCheck, Clock, Recycle, Mountain } from 'lucide-react';
 import { BUSINESS_INFO } from '../data';
 
 interface NavbarProps {
@@ -46,7 +46,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onScrollTo }) => 
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="hidden sm:inline text-white/60 tracking-wider text-[10px] uppercase">24/7 Dispatch</span>
+            <span className="hidden sm:inline text-white/60 tracking-wider text-[10px] uppercase">Call For A Quote</span>
             <a 
               href={`tel:${BUSINESS_INFO.phone}`} 
               className="font-bold flex items-center gap-1.5 bg-orange-highlight text-white px-3 py-1.5 rounded-full text-xs hover:bg-orange-hover transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
@@ -68,11 +68,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onScrollTo }) => 
           >
             {/* Subtle glow behind logo */}
             <div className="absolute inset-0 bg-navy/10 rounded-full blur-xl scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <img 
-              src="https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/729981393_18142386355477816_3612252020470802997_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=1EAuP33uHF8Q7kNvwEQWl04&_nc_oc=Adoe3N7T6N1bCISgA8CKHqWo6cA4SA6OZl8DDxOY6GqlDwrTLLPBwBLYNBrecuN9wJc&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=adTI6TkmMcVcSHvMi0AVlQ&_nc_ss=7b689&oh=00_Af_WtnPnrGA64avDNkkzXHUu6d8kJqX-qpVWLkhJj8Uxuw&oe=6A45D594"
-              alt="Cascade Junk Removal Logo"
-              className="w-auto h-16 sm:h-20 object-contain drop-shadow-md group-hover:scale-105 group-hover:rotate-1 transition-all duration-500 relative z-10"
-            />
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-navy text-white rounded-xl flex items-center justify-center font-bold shadow-md relative z-10 group-hover:scale-105 group-hover:rotate-1 transition-all duration-500">
+              <Mountain className="w-6 h-6 sm:w-7 sm:h-7 stroke-[2.5]" />
+            </div>
+            <div className="flex flex-col relative z-10">
+              <span className="text-xl sm:text-2xl font-display font-black tracking-tight text-neutral-dark leading-none">
+                CASCADE <span className="text-orange-highlight">JUNK</span>
+              </span>
+              <span className="text-[10px] sm:text-xs font-bold text-gray-500 tracking-wider uppercase leading-none mt-1">
+                Removal
+              </span>
+            </div>
           </div>
 
           {/* Desktop Nav Links */}

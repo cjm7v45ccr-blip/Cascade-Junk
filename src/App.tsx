@@ -8,6 +8,8 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
 import { AboutAndAreas } from './components/AboutAndAreas';
+import { TestimonialsSection } from './components/TestimonialsSection';
+import { GallerySection } from './components/GallerySection';
 import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -24,7 +26,8 @@ export default function App() {
       const now = new Date();
       const day = now.getDay();
       const hour = now.getHours();
-      setIsBusinessHours(day >= 1 && day <= 5 && hour >= 10 && hour < 17);
+      // Mon-Sat (1-6) and 8AM to 6PM (8 <= hour < 18)
+      setIsBusinessHours(day >= 1 && day <= 6 && hour >= 8 && hour < 18);
     };
     
     checkBusinessHours();
@@ -69,9 +72,13 @@ export default function App() {
           onSelectService={() => handleOpenBooking()} 
         />
 
+        <TestimonialsSection />
+
         <AboutAndAreas 
           onOpenBooking={() => handleOpenBooking()} 
         />
+
+        <GallerySection />
 
         <FaqSection 
           onOpenBooking={() => handleOpenBooking()} 
@@ -109,7 +116,7 @@ export default function App() {
       <div className="sm:hidden fixed bottom-4 left-4 right-4 z-50 bg-navy-dark/95 backdrop-blur-md text-white p-3 rounded-2xl shadow-2xl border border-white/10 flex items-center justify-between gap-3 animate-slideUp active:scale-[1.02] active:shadow-[0_20px_40px_-15px_rgba(27,38,59,0.7)] transition-all duration-300">
         <div className="flex flex-col pl-1 text-left">
           <span className="text-[10px] font-bold text-orange-highlight uppercase tracking-wider">Cascade Junk Removal</span>
-          <span className={`text-xs font-black transition-colors duration-300 ${isBusinessHours ? 'text-emerald-400' : 'text-white/50'}`}>Mon-Fri 10AM-5PM</span>
+          <span className={`text-xs font-black transition-colors duration-300 ${isBusinessHours ? 'text-emerald-400' : 'text-white/50'}`}>Mon-Sat 8AM-6PM</span>
         </div>
         <div className="flex items-center gap-2">
           <a

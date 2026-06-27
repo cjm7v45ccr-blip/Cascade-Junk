@@ -26,12 +26,22 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenBooking })
     }
     
     setIsSubmitting(true);
-    // Simulate API call
+    
+    // Wire to mailto
+    const subject = encodeURIComponent(`New Quote Request: ${formData.service}`);
+    const body = encodeURIComponent(`
+Name: ${formData.name}
+Phone: ${formData.phone}
+Service: ${formData.service}
+Preferred Date: ${formData.date}
+    `);
+    
+    window.location.href = `mailto:${BUSINESS_INFO.email}?subject=${subject}&body=${body}`;
+
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
-      // Optional: actually trigger mailto or SMS here in real world
-    }, 1500);
+    }, 1000);
   };
 
   return (
@@ -82,7 +92,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenBooking })
                     <Phone className="w-6 h-6 fill-current" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-orange-highlight uppercase block mb-0.5">Call Dispatch</span>
+                    <span className="text-xs font-bold text-orange-highlight uppercase block mb-0.5">Call Us Now</span>
                     <span className="text-2xl font-black text-white group-hover:text-emerald-50 transition-colors">{BUSINESS_INFO.phoneDisplay}</span>
                   </div>
                 </a>

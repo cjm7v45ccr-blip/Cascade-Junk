@@ -6,7 +6,7 @@ export interface ServiceItem {
   iconName: string;
   imageUrl: string;
   commonItems: string[];
-  startingPrice: string;
+  startingPrice?: string;
 }
 
 export interface PricingTier {
@@ -19,13 +19,14 @@ export interface PricingTier {
 }
 
 export interface Testimonial {
-  id: string;
+  id: string | number;
   name: string;
   location: string;
   rating: number;
-  date: string;
-  comment: string;
-  serviceUsed: string;
+  text: string;
+  initials?: string;
+  date?: string;
+  serviceUsed?: string;
   avatarUrl?: string;
 }
 

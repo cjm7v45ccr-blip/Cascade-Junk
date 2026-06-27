@@ -21,7 +21,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
                 <Mountain className="w-6 h-6 stroke-[2.5]" />
               </div>
               <span className="text-2xl font-display font-black tracking-tight text-white">
-                CASCADE<span className="text-navy">CLEAN</span>
+                CASCADE <span className="text-orange-highlight">JUNK</span>
               </span>
             </div>
 
@@ -87,13 +87,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
 
           {/* Col 4: Dispatch Hours & CTA */}
           <div className="space-y-4">
-            <h4 className="text-xs font-black text-navy uppercase tracking-widest">Dispatch Hours</h4>
+            <h4 className="text-xs font-black text-navy uppercase tracking-widest">Business Hours</h4>
             <div className="text-xs space-y-2 bg-forest p-4 rounded-2xl border border-emerald-800">
               <div className="flex items-center gap-1.5 text-navy font-black">
-                <Clock className="w-3.5 h-3.5" /> 7 Days a Week
+                <Clock className="w-3.5 h-3.5" /> 6 Days a Week
               </div>
-              <p className="text-white font-semibold">Mon - Sat: 7am - 8pm</p>
-              <p className="text-white font-semibold">Sunday: 8am - 6pm</p>
+              <p className="text-white font-semibold">Mon - Sat: 8:00 AM - 6:00 PM</p>
+              <p className="text-white/60 font-medium">Sunday: Closed</p>
               <p className="text-[11px] text-emerald-300 pt-1.5 border-t border-emerald-800 flex items-center gap-1 font-bold">
                 <ShieldCheck className="w-3.5 h-3.5" /> Same-Day Trucks Available
               </p>
@@ -113,9 +113,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400 font-medium">
           <div>
             © {new Date().getFullYear()} Cascade Junk Removal. All rights reserved. Licensed, Bonded & Insured.
-          </div>
-          <div className="flex items-center gap-6">
-            <button onClick={() => onScrollTo('faq')} className="hover:text-white cursor-pointer">Terms & Privacy</button>
           </div>
         </div>
 
