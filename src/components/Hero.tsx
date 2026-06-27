@@ -43,17 +43,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
             </motion.div>
 
             {/* Main Headline exact requested */}
-            <h1 className="text-4xl sm:text-6xl lg:text-6xl font-display font-black text-neutral-dark tracking-tight leading-[1.08]">
-              Fast, Reliable <br />
-              Junk Removal <br />
-              <span className="text-forest underline decoration-navy decoration-4 underline-offset-8">
-                in Wenatchee & East Wenatchee
-              </span>
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-display font-black text-neutral-dark tracking-tight leading-[1.05]">
+              That pile in your garage isn't going to <span className="text-forest underline decoration-orange-highlight decoration-4 underline-offset-8">haul itself.</span>
             </h1>
 
             {/* Short description of your services */}
-            <p className="text-base sm:text-xl text-gray-700 leading-relaxed font-normal max-w-2xl">
-              We make clutter disappear across Wenatchee and East Wenatchee! Operating Monday–Friday, 10 AM – 5 PM. Note: We do not haul hazardous waste or wet paint.
+            <p className="text-base sm:text-xl text-gray-700 leading-relaxed font-medium max-w-2xl">
+              Same-day pickup across Wenatchee. Call Marco. Not a franchise. Not a call center. Just local junk removal when you need it.
             </p>
 
             {/* Service Highlights Pills */}
@@ -117,24 +113,23 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
-              {/* Main Photo */}
+              {/* Main Photo Placeholder */}
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-navy aspect-4/3 sm:aspect-square relative flex items-center justify-center p-8 group">
-                <img
-                  src="https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/729981393_18142386355477816_3612252020470802997_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=1EAuP33uHF8Q7kNvwEQWl04&_nc_oc=Adoe3N7T6N1bCISgA8CKHqWo6cA4SA6OZl8DDxOY6GqlDwrTLLPBwBLYNBrecuN9wJc&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=adTI6TkmMcVcSHvMi0AVlQ&_nc_ss=7b689&oh=00_Af_WtnPnrGA64avDNkkzXHUu6d8kJqX-qpVWLkhJj8Uxuw&oe=6A45D594"
-                  alt="Cascade Junk Removal Logo"
-                  className="w-full h-auto object-contain group-hover:scale-105 transition duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
+                <div className="text-center flex flex-col items-center justify-center">
+                  <Truck className="w-24 h-24 text-orange-highlight mb-4" />
+                  <h2 className="text-3xl font-black text-white mb-2">{BUSINESS_INFO.name}</h2>
+                  <p className="text-lg text-emerald-100 font-medium">Ready for your call.</p>
+                </div>
                 
                 {/* Overlay Badge */}
                 <div className="absolute bottom-6 left-6 right-6 text-white text-left">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="bg-orange-highlight text-white font-black text-xs px-2.5 py-1 rounded-md uppercase tracking-wider">
-                      Cascade Junk Removal
+                      Local Business
                     </span>
                   </div>
                   <p className="text-base sm:text-lg font-black leading-snug text-white">
-                    Please provide an image for this section if you'd like a background photo!
+                    {BUSINESS_INFO.phoneDisplay}
                   </p>
                 </div>
               </div>
@@ -151,7 +146,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
                 </div>
                 <div className="text-left">
                   <div className="text-xs font-bold text-gray-500">HOURS</div>
-                  <div className="text-sm font-black text-neutral-dark">Mon-Fri 10AM-5PM</div>
+                  <div className="text-sm font-black text-neutral-dark whitespace-nowrap">{BUSINESS_INFO.hours}</div>
                 </div>
               </motion.div>
 

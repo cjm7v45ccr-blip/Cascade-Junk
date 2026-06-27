@@ -8,22 +8,22 @@ export const TrustBar: React.FC = () => {
         <div className="flex items-center justify-center gap-3">
           <Truck className="w-8 h-8 text-orange-highlight" />
           <div>
-            <div className="text-xl font-black">500+ lbs</div>
-            <div className="text-xs text-emerald-100 uppercase tracking-wider font-bold">Hauled Away</div>
+            <div className="text-xl font-black">Fast & Reliable</div>
+            <div className="text-xs text-emerald-100 uppercase tracking-wider font-bold">Service</div>
           </div>
         </div>
         <div className="flex items-center justify-center gap-3">
           <Users className="w-8 h-8 text-orange-highlight" />
           <div>
-            <div className="text-xl font-black">100+</div>
-            <div className="text-xs text-emerald-100 uppercase tracking-wider font-bold">Happy Customers</div>
+            <div className="text-xl font-black">Every Job</div>
+            <div className="text-xs text-emerald-100 uppercase tracking-wider font-bold">Big Or Small</div>
           </div>
         </div>
         <div className="flex items-center justify-center gap-3">
           <MapPin className="w-8 h-8 text-orange-highlight" />
           <div>
             <div className="text-xl font-black">Locally Owned</div>
-            <div className="text-xs text-emerald-100 uppercase tracking-wider font-bold">Since 2024</div>
+            <div className="text-xs text-emerald-100 uppercase tracking-wider font-bold">And Operated</div>
           </div>
         </div>
       </div>

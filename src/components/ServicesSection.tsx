@@ -81,9 +81,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                 </div>
 
                 {/* Title & Descs */}
-                <h3 className="text-2xl font-display font-black text-neutral-dark mb-2 group-hover:text-navy transition-colors">
+                <h3 className="text-2xl font-display font-black text-neutral-dark mb-1 group-hover:text-navy transition-colors">
                   {service.title}
                 </h3>
+                {service.startingPrice && (
+                  <div className="inline-block px-2 py-1 mb-2 bg-green-100 text-green-800 text-xs font-black uppercase rounded-md tracking-wide">
+                    Starts at {service.startingPrice}
+                  </div>
+                )}
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {service.fullDesc}
                 </p>

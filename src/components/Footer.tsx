@@ -25,8 +25,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
               </span>
             </div>
 
-            <p className="text-sm text-gray-300 leading-relaxed max-w-sm font-normal">
-              Trustworthy, energetic residential and commercial junk hauling. We take pride in transparent volume pricing, polite crews, clean yards & garages, and diverting up to 80% of debris from local landfills.
+            <p className="text-sm text-gray-300 leading-relaxed max-w-sm font-medium">
+              Locally owned and operated residential and commercial junk hauling. We take pride in upfront pricing, polite crews, and clean yards & garages.
             </p>
 
             <div className="space-y-2 pt-2">

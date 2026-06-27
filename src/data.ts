@@ -64,40 +64,7 @@ export const PRICING_TIERS: PricingTier[] = [];
 
 export const BEFORE_AFTER_GALLERY: BeforeAfterItem[] = [];
 
-export const REVIEWS_LIST: Testimonial[] = [
-  {
-    id: "1",
-    name: "Sarah M.",
-    location: "Wenatchee, WA",
-    text: "Absolutely fantastic service. They showed up right on time, gave me a fair quote on the spot, and had my entire garage cleared out in under an hour. Highly recommend Cascade Junk Removal!",
-    rating: 5,
-    initials: "SM"
-  },
-  {
-    id: "2",
-    name: "David T.",
-    location: "East Wenatchee, WA",
-    text: "Very professional and friendly crew. We had a heavy old hot tub that needed to go, and they handled it safely and efficiently without damaging our deck. Will use them again.",
-    rating: 5,
-    initials: "DT"
-  },
-  {
-    id: "3",
-    name: "Jessica L.",
-    location: "Cashmere, WA",
-    text: "I was impressed by how clean they left the area after removing a huge pile of yard waste and old fencing. They even swept up the driveway. Great attention to detail.",
-    rating: 5,
-    initials: "JL"
-  },
-  {
-    id: "4",
-    name: "Mark P.",
-    location: "Leavenworth, WA",
-    text: "Called them for a quick appliance pickup. They were able to fit me in the same day and their price was very reasonable. Great local business.",
-    rating: 5,
-    initials: "MP"
-  }
-];
+export const REVIEWS_LIST: Testimonial[] = [];
 
 export const SERVICE_AREAS_TOWNS = [
   "Wenatchee", "East Wenatchee", "Cashmere", "Leavenworth", "Chelan", "Entiat", "Malaga", "Rock Island", "Peshastin"

@@ -9,8 +9,6 @@ import { Hero } from './components/Hero';
 import { TrustBar } from './components/TrustBar';
 import { ServicesSection } from './components/ServicesSection';
 import { AboutAndAreas } from './components/AboutAndAreas';
-import { TestimonialsSection } from './components/TestimonialsSection';
-import { GallerySection } from './components/GallerySection';
 import { FaqSection } from './components/FaqSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -75,13 +73,9 @@ export default function App() {
           onSelectService={() => handleOpenBooking()} 
         />
 
-        <TestimonialsSection />
-
         <AboutAndAreas 
           onOpenBooking={() => handleOpenBooking()} 
         />
-
-        <GallerySection />
 
         <FaqSection 
           onOpenBooking={() => handleOpenBooking()} 

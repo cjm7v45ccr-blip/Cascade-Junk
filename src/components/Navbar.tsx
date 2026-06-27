@@ -14,7 +14,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onScrollTo }) => 
     { label: "Services", id: "services" },
     { label: "About", id: "about" },
     { label: "Service Areas", id: "areas" },
-    { label: "Reviews", id: "reviews" },
     { label: "FAQ", id: "faq" },
     { label: "Contact", id: "contact" },
   ];

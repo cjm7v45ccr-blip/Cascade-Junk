@@ -32,8 +32,8 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               </h2>
 
               {/* Who you are */}
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-                Founded with a mission to keep our scenic communities pristine, <span className="font-extrabold text-[#0A3D2A]">Cascade Junk Removal</span> is a trustworthy, locally owned full-service junk removal company. We believe clearing your clutter shouldn't mean dumping usable household items into local landfills or dealing with hidden contractor fees.
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-medium">
+                I grew up in Wenatchee and got tired of seeing good furniture end up in the landfill, and residents dealing with out-of-town call centers. <span className="font-extrabold text-[#0A3D2A]">Cascade Junk Removal</span> is Marco's local, full-service junk removal company. We handle everything from single item pickups to full estate cleanouts with a smile.
               </p>
 
               {/* Why customers should choose you */}
@@ -43,10 +43,11 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
                   Why Customers Choose Us:
                 </h3>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     { title: "Fast & Reliable", desc: "We show up on time and work efficiently." },
-                    { title: "Locally Owned", desc: "Proudly serving Wenatchee and East Wenatchee." },
+                    { title: "Locally Owned", desc: "Proudly serving the Wenatchee Valley." },
+                    { title: "No Hidden Fees", desc: "Upfront pricing before we start." },
                   ].map((feat, idx) => (
                     <motion.div 
                       key={idx} 
@@ -85,19 +86,10 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               transition={{ delay: 0.3, duration: 0.6 }}
               className="lg:col-span-5 relative"
             >
-              <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-navy aspect-4/3 relative flex items-center justify-center p-8">
-                 <img
-                  src="https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/729981393_18142386355477816_3612252020470802997_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=1EAuP33uHF8Q7kNvwEQWl04&_nc_oc=Adoe3N7T6N1bCISgA8CKHqWo6cA4SA6OZl8DDxOY6GqlDwrTLLPBwBLYNBrecuN9wJc&_nc_zt=24&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=adTI6TkmMcVcSHvMi0AVlQ&_nc_ss=7b689&oh=00_Af_WtnPnrGA64avDNkkzXHUu6d8kJqX-qpVWLkhJj8Uxuw&oe=6A45D594"
-                  alt="Cascade Junk Removal Logo"
-                  className="w-full h-auto object-contain opacity-50"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 text-white text-left">
-                  <div className="text-xs font-black text-orange-highlight mb-1 uppercase tracking-wider">Please Provide Photos</div>
-                  <p className="text-xs sm:text-sm text-white font-bold leading-snug">
-                    We'll display photos of your team or trucks here once you provide them!
-                  </p>
-                </div>
+              <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-navy aspect-4/3 relative flex flex-col items-center justify-center p-8 text-center">
+                 <Mountain className="w-24 h-24 text-orange-highlight mb-4" />
+                 <h2 className="text-3xl font-black text-white mb-2">Locally Owned</h2>
+                 <p className="text-emerald-100 font-medium">Serving the Wenatchee Valley</p>
               </div>
             </motion.div>
 
