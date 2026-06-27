@@ -111,51 +111,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="lg:col-span-5 relative mt-8 lg:mt-0"
           >
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              
-              <div className="rounded-3xl shadow-2xl border-4 border-white bg-white aspect-4/3 sm:aspect-square relative flex flex-col p-8 justify-center">
-                 <div className="text-navy font-black text-2xl mb-6">Simple Pricing</div>
-                 <div className="space-y-4 text-neutral-dark font-medium text-sm">
-                   <div className="flex justify-between border-b border-gray-100 pb-3"><span>Single Item</span><span className="font-bold">From $50</span></div>
-                   <div className="flex justify-between border-b border-gray-100 pb-3"><span>Half Truck</span><span className="font-bold">$150+</span></div>
-                   <div className="flex justify-between pb-3"><span>Full Truck</span><span className="font-bold">$300+</span></div>
-                 </div>
-                 <a href={`tel:${BUSINESS_INFO.phone}`} className="mt-8 bg-orange-highlight text-white text-center py-4 rounded-xl font-black shadow-md hover:bg-orange-hover transition">Call {BUSINESS_INFO.phoneDisplay}</a>
-              </div>
-
-              {/* Floating Badge 1: Upfront Pricing */}
-              <motion.div 
-                initial={{ y: 0 }}
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 sm:p-4 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3"
-              >
-                <div className="bg-navy-dark text-orange-highlight p-2.5 rounded-xl">
-                  <Clock className="w-6 h-6" />
-                </div>
-                <div className="text-left">
-                  <div className="text-xs font-bold text-gray-500">HOURS</div>
-                  <div className="text-sm font-black text-neutral-dark whitespace-nowrap">{BUSINESS_INFO.hours}</div>
-                </div>
-              </motion.div>
-
-              {/* Floating Badge 2: Contact */}
-              <motion.div 
-                initial={{ y: 0 }}
-                animate={{ y: [0, 10, 0] }}
-                transition={{ delay: 2, duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-6 -right-4 sm:-right-6 bg-navy text-white p-3.5 sm:p-4 rounded-2xl shadow-2xl border border-navy-dark flex items-center gap-3"
-              >
-                <div className="bg-orange-highlight text-white p-2.5 rounded-xl font-bold">
-                  <PhoneCall className="w-6 h-6" />
-                </div>
-                <div className="text-left">
-                  <div className="text-xs font-bold text-orange-highlight">CONTACT US</div>
-                  <div className="text-sm font-black">509-433-4493</div>
-                </div>
-              </motion.div>
-
-            </div>
           </motion.div>
 
         </div>

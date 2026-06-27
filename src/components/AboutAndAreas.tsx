@@ -22,9 +22,9 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
-              className="lg:col-span-7 text-left space-y-6"
+              className="text-left space-y-6"
             >
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-100 text-[#0A3D2A] text-xs font-black uppercase tracking-wider">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-100 text-forest text-xs font-black uppercase tracking-wider">
                 <Mountain className="w-3.5 h-3.5 text-orange-highlight" /> Who We Are
               </div>
               <h2 className="text-3xl sm:text-5xl font-display font-black text-[#1F2937] tracking-tight">
@@ -33,7 +33,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
 
               {/* Who you are */}
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-medium">
-                I grew up in Wenatchee and got tired of seeing good furniture end up in the landfill, and residents dealing with out-of-town call centers. <span className="font-extrabold text-[#0A3D2A]">Cascade Junk Removal</span> is Marco's local, full-service junk removal company. We handle everything from single item pickups to full estate cleanouts with a smile.
+                I grew up in Wenatchee and got tired of seeing good furniture end up in the landfill, and residents dealing with out-of-town call centers. <span className="font-extrabold text-forest">Cascade Junk Removal</span> is Marco's local, full-service junk removal company. We handle everything from single item pickups to full estate cleanouts with a smile.
               </p>
 
               {/* Why customers should choose you */}
@@ -78,24 +78,6 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
 
             </motion.div>
 
-            {/* Right Visual Image */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              className="lg:col-span-5 relative"
-            >
-              <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-navy aspect-square relative flex flex-col items-center justify-center p-8 text-center">
-                 <Truck className="w-16 h-16 text-orange-highlight mb-6" />
-                 <h3 className="text-2xl font-black text-white mb-4">Pricing Made Simple</h3>
-                 <div className="space-y-3 text-emerald-100 font-medium text-sm">
-                   <p>Single Item: From $50</p>
-                   <p>Half Truckload: $150+</p>
-                   <p>Full Truckload: $300+</p>
-                 </div>
-              </div>
-            </motion.div>
 
           </div>
 

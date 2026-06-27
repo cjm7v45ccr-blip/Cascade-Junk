@@ -31,16 +31,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
 
             <div className="space-y-2 pt-2">
               <a href={`tel:${BUSINESS_INFO.phone}`} className="flex items-center gap-2.5 text-white font-black hover:text-orange-highlight transition text-base">
-                <Phone className="w-4 h-4 text-navy fill-current" />
+                <Phone className="w-4 h-4 text-orange-highlight fill-current" />
                 <span>{BUSINESS_INFO.phoneDisplay}</span>
               </a>
               <a href={`mailto:${BUSINESS_INFO.email}`} className="flex items-center gap-2.5 text-sm text-gray-300 hover:text-orange-highlight transition font-medium">
-                <Mail className="w-4 h-4 text-navy" />
+                <Mail className="w-4 h-4 text-orange-highlight" />
                 <span>{BUSINESS_INFO.email}</span>
               </a>
               {BUSINESS_INFO.instagram && (
                 <a href={`https://instagram.com/${BUSINESS_INFO.instagram}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-gray-300 hover:text-orange-highlight transition font-medium">
-                  <Instagram className="w-4 h-4 text-navy" />
+                  <Instagram className="w-4 h-4 text-orange-highlight" />
                   <span>@{BUSINESS_INFO.instagram}</span>
                 </a>
               )}
@@ -112,7 +112,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400 font-medium">
           <div>
-            © {new Date().getFullYear()} Cascade Junk Removal. All rights reserved. Licensed, Bonded & Insured.
+            © {new Date().getFullYear()} Cascade Junk Removal. All rights reserved.
           </div>
         </div>
 
