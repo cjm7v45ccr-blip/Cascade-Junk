@@ -116,7 +116,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               Cascade Towns & Communities We Serve
             </h2>
             <p className="mt-4 text-gray-700 text-lg font-normal">
-              Our eco-friendly hauling crews are stationed across the Cascade area daily. Don't see your specific neighborhood listed? Give us a call—we cover the entire region!
+              Marco covers the whole Wenatchee Valley—don't see your area? Just call.
             </p>
           </motion.div>
 

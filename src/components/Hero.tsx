@@ -60,7 +60,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
               className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-3 py-1"
             >
               {[
-                "Wenatchee", "East Wenatchee", "Fast & Reliable", "Mon-Fri 10AM-5PM"
+                "Wenatchee", "East Wenatchee", "Fast & Reliable", BUSINESS_INFO.hours
               ].map((pill, idx) => (
                 <div key={idx} className="flex items-center gap-2 bg-white px-3.5 py-2.5 rounded-xl border border-gray-200 shadow-2xs text-xs sm:text-sm font-bold text-neutral-dark">
                   <CheckCircle2 className="w-4 h-4 text-navy shrink-0" />
