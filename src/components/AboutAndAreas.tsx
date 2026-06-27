@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, MapPin, Truck, Heart, Clock, Award, CheckCircle2, PhoneCall, Mountain, Trees } from 'lucide-react';
+import { ShieldCheck, MapPin, Heart, Clock, Award, CheckCircle2, PhoneCall, Mountain, Trees } from 'lucide-react';
 import { BUSINESS_INFO, SERVICE_AREAS_TOWNS } from '../data';
 import { motion } from 'motion/react';
 
@@ -22,7 +22,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
-              className="text-left space-y-6"
+              className="lg:col-span-6 text-left space-y-6"
             >
               <h2 className="text-3xl sm:text-5xl font-display font-black text-[#1F2937] tracking-tight">
                 About Cascade Junk Removal
@@ -30,7 +30,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
 
               {/* Who you are */}
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed font-medium">
-                I grew up in Wenatchee and got tired of seeing good furniture end up in the landfill, and residents dealing with out-of-town call centers. <span className="font-extrabold text-forest">Cascade Junk Removal</span> is Marco's local, full-service junk removal company. We handle everything from single item pickups to full estate cleanouts with a smile.
+                I grew up in Wenatchee and got tired of seeing good furniture end up in the landfill, and residents dealing with out-of-town call centers. <span className="font-extrabold text-forest">Cascade Junk Removal</span> is Marco and Ian's local, full-service junk removal company. We handle everything from single item pickups to full estate cleanouts with a smile.
               </p>
 
               {/* Why customers should choose you */}
@@ -75,6 +75,23 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
 
             </motion.div>
 
+            {/* Right Content / Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-6 relative"
+            >
+              <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-gray-200 relative flex items-center justify-center">
+                <img 
+                  src="/src/assets/images/wenatchee_placeholder_1782589717984.jpg" 
+                  alt="Wenatchee Valley" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-navy/10" />
+              </div>
+            </motion.div>
 
           </div>
 
@@ -96,7 +113,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               Cascade Towns & Communities We Serve
             </h2>
             <p className="mt-4 text-gray-700 text-lg font-normal">
-              Marco covers the whole Wenatchee Valley—don't see your area? Just call.
+              Marco and Ian cover the whole Wenatchee Valley—don't see your area? Just call.
             </p>
           </motion.div>
 

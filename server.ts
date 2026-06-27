@@ -68,15 +68,15 @@ app.post('/api/estimate', async (req, res) => {
       });
     }
     
-    const promptText = `You are an expert junk removal pricing estimator for 'Fast Haul Junk Removal'. 
+    const promptText = `You are an expert junk removal pricing estimator for 'Cascade Junk Removal'. 
 Analyze the customer's junk description and/or photo: "${itemsDescription || 'See attached photo'}".
 
 Standard pricing structure:
 - Minimum Pickup (single small item like a microwave or chair): $99 - $139
-- 1/4 Truckload (approx. 3-4 cubic yards or sofa + armchair): $189 - $239
-- 1/2 Truckload (approx. 7-8 cubic yards or bedroom cleanout): $289 - $349
-- 3/4 Truckload (approx. 11-12 cubic yards or multi-room cleanout): $389 - $449
-- Full Truckload (approx. 15-16 cubic yards or garage cleanout): $489 - $589
+- Small Load (approx. 3-4 cubic yards or sofa + armchair): $189 - $239
+- Medium Load (approx. 7-8 cubic yards or bedroom cleanout): $289 - $349
+- Large Load (approx. 11-12 cubic yards or multi-room cleanout): $389 - $449
+- Extra Large Load (approx. 15-16 cubic yards or garage cleanout): $489 - $589
 - Heavy construction debris / concrete / shingles: Add 20% weight surcharge.
 
 Provide a realistic volume estimate, price range, breakdown of items detected, and our eco-friendly disposal plan (donations/recycling). Return strictly JSON matching the requested schema.`;
@@ -91,7 +91,7 @@ Provide a realistic volume estimate, price range, breakdown of items detected, a
         responseSchema: {
           type: Type.OBJECT,
           properties: {
-            truckloadTier: { type: Type.STRING, description: "e.g. '1/2 Truckload' or 'Single Item / Min Pickup'" },
+            loadSizeTier: { type: Type.STRING, description: "e.g. 'Medium Load' or 'Single Item / Min Pickup'" },
             estimatedCubicYards: { type: Type.STRING, description: "e.g. '7-8 cubic yards'" },
             priceRange: { type: Type.STRING, description: "e.g. '$289 - $349'" },
             detectedItemsBreakdown: {
@@ -106,7 +106,7 @@ Provide a realistic volume estimate, price range, breakdown of items detected, a
             timeEstimate: { type: Type.STRING, description: "e.g. '30 - 45 mins onsite'" },
             estimatorNotes: { type: Type.STRING, description: "Friendly advice or what is included (labor, hauling, dump fees)" }
           },
-          required: ['truckloadTier', 'estimatedCubicYards', 'priceRange', 'detectedItemsBreakdown', 'disposalStrategy', 'timeEstimate', 'estimatorNotes'],
+          required: ['loadSizeTier', 'estimatedCubicYards', 'priceRange', 'detectedItemsBreakdown', 'disposalStrategy', 'timeEstimate', 'estimatorNotes'],
         },
       },
     });
@@ -117,7 +117,7 @@ Provide a realistic volume estimate, price range, breakdown of items detected, a
     console.error('Error generating AI estimate:', error);
     // Return a fallback estimate if API key is missing or rate limited so the user always gets a smooth experience
     return res.json({
-      truckloadTier: '1/2 Truckload Estimate',
+      loadSizeTier: 'Medium Load Estimate',
       estimatedCubicYards: '6-8 cubic yards',
       priceRange: '$279 - $339',
       detectedItemsBreakdown: ['Assorted household junk', 'Furniture items', 'General boxes/bags'],

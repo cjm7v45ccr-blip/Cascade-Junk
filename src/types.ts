@@ -48,7 +48,7 @@ export interface FaqItem {
 }
 
 export interface EstimateResult {
-  truckloadTier: string;
+  loadSizeTier: string;
   estimatedCubicYards: string;
   priceRange: string;
   detectedItemsBreakdown: string[];

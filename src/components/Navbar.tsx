@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Truck, Phone, Calendar, Menu, X, ShieldCheck, Clock, Recycle, Mountain } from 'lucide-react';
+import { Phone, Calendar, Menu, X, ShieldCheck, Clock, Recycle, Mountain, MapPin } from 'lucide-react';
 import { BUSINESS_INFO } from '../data';
 
 interface NavbarProps {
@@ -33,7 +33,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onScrollTo }) => 
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 relative z-10">
           <div className="flex items-center gap-5 flex-wrap">
             <span className="flex items-center gap-1.5 text-emerald-100">
-              <Truck className="w-4 h-4 text-orange-highlight" /> 
+              <MapPin className="w-4 h-4 text-orange-highlight" /> 
               <span className="tracking-wide">Serving Wenatchee & East Wenatchee</span>
             </span>
             <span className="hidden md:flex items-center gap-1.5 text-white/90">

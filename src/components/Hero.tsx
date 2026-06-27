@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Truck, Clock, ArrowRight, CheckCircle2, PhoneCall, Mountain, Sparkles, Recycle, Mail, MessageSquare } from 'lucide-react';
+import { ShieldCheck, Clock, ArrowRight, CheckCircle2, PhoneCall, Mountain, Sparkles, Recycle, Mail, MessageSquare } from 'lucide-react';
 import { BUSINESS_INFO } from '../data';
 import { motion } from 'motion/react';
 
@@ -30,7 +30,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
 
             {/* Short description of your services */}
             <p className="text-base sm:text-xl text-gray-700 leading-relaxed font-medium max-w-2xl">
-              Same-day pickup across Wenatchee. Call Marco. Not a franchise. Not a call center. Just local junk removal when you need it.
+              Same-day pickup across Wenatchee. Call Marco or Ian. Not a franchise. Not a call center. Just local junk removal when you need it.
             </p>
 
             {/* Contact Buttons */}
@@ -42,10 +42,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
             >
               <a
                 href={`tel:${BUSINESS_INFO.phone}`}
-                className="bg-navy hover:bg-navy-dark text-white font-black px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 text-lg cursor-pointer"
+                className="bg-orange-highlight hover:bg-orange-hover text-white font-black px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 text-lg cursor-pointer"
               >
                 <PhoneCall className="w-6 h-6 text-white" />
-                Call Marco: {BUSINESS_INFO.phoneDisplay}
+                Call Marco or Ian: {BUSINESS_INFO.phoneDisplay}
               </a>
             </motion.div>
 
@@ -58,14 +58,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="lg:col-span-5 relative mt-8 lg:mt-0"
           >
-            <div className="rounded-3xl shadow-2xl border-4 border-white bg-white aspect-square relative flex flex-col p-8 justify-center">
-              <div className="text-navy font-black text-2xl mb-6">Simple Pricing</div>
-              <div className="space-y-4 text-neutral-dark font-medium text-sm">
-                <div className="flex justify-between border-b border-gray-100 pb-3"><span>Single Item</span><span className="font-bold">From $50</span></div>
-                <div className="flex justify-between border-b border-gray-100 pb-3"><span>Half Truck</span><span className="font-bold">$150+</span></div>
-                <div className="flex justify-between pb-3"><span>Full Truck</span><span className="font-bold">$300+</span></div>
-              </div>
-              <a href={`tel:${BUSINESS_INFO.phone}`} className="mt-8 bg-orange-highlight hover:bg-orange-hover text-white text-center py-4 rounded-xl font-black shadow-md transition">Call for Exact Quote →</a>
+            <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-square relative">
+              <img 
+                src="/src/assets/images/wenatchee_placeholder_1782589717984.jpg" 
+                alt="Wenatchee Valley" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-navy/20" />
             </div>
           </motion.div>
 

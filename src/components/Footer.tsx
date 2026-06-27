@@ -1,5 +1,5 @@
 import React from 'react';
-import { Truck, Phone, Mail, MapPin, ShieldCheck, Clock, Mountain, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, ShieldCheck, Clock, Mountain, Instagram } from 'lucide-react';
 import { BUSINESS_INFO, SERVICES_LIST } from '../data';
 
 interface FooterProps {
@@ -95,7 +95,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
               <p className="text-white font-semibold">Mon - Sat: 8:00 AM - 6:00 PM</p>
               <p className="text-white/60 font-medium">Sunday: Closed</p>
               <p className="text-[11px] text-emerald-300 pt-1.5 border-t border-emerald-800 flex items-center gap-1 font-bold">
-                <ShieldCheck className="w-3.5 h-3.5" /> Same-Day Trucks Available
+                <ShieldCheck className="w-3.5 h-3.5" /> Same-Day Pickups Available
               </p>
             </div>
 

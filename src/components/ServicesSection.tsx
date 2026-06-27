@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   Home, Sofa, Refrigerator, Warehouse, Trees, HeartHandshake, HardHat, 
-  ArrowRight, CheckCircle2, Calendar, Mountain, Recycle, Truck
+  ArrowRight, CheckCircle2, Calendar, Mountain, Recycle, Package
 } from 'lucide-react';
 import { SERVICES_LIST, BUSINESS_INFO } from '../data';
 import { motion } from 'motion/react';
@@ -37,7 +37,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-neutral-light text-navy text-xs font-black uppercase tracking-wider mb-3">
-            <Truck className="w-3.5 h-3.5 text-orange-highlight" /> What We Haul
+            <Package className="w-3.5 h-3.5 text-orange-highlight" /> What We Haul
           </div>
           <h2 className="text-3xl sm:text-5xl font-display font-black text-neutral-dark tracking-tight">
             Comprehensive Junk Removal
@@ -69,7 +69,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     />
                   ) : (
                     <div className="w-full h-full bg-navy/10 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                      <Truck className="w-12 h-12 text-navy/50" />
+                      <Package className="w-12 h-12 text-navy/50" />
                     </div>
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-transparent to-transparent" />
@@ -84,11 +84,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                 <h3 className="text-2xl font-display font-black text-neutral-dark mb-1 group-hover:text-navy transition-colors">
                   {service.title}
                 </h3>
-                {service.startingPrice && (
-                  <div className="inline-block px-2 py-1 mb-2 bg-green-100 text-green-800 text-xs font-black uppercase rounded-md tracking-wide">
-                    Starts at {service.startingPrice}
-                  </div>
-                )}
                 <p className="text-gray-800 text-sm leading-relaxed mb-4">
                   {service.fullDesc}
                 </p>

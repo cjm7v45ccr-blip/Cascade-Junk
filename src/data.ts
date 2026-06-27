@@ -17,7 +17,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     id: "furniture",
     title: "Furniture Removal",
     shortDesc: "Couches, mattresses, desks, and more.",
-    fullDesc: "Got an old couch or heavy mattress you need gone? We'll carefully remove all types of furniture from anywhere in your home, and we're always careful with your walls and floors.",
+    fullDesc: "Got an old couch or heavy mattress you need gone? Marco and Ian will carefully remove all types of furniture from anywhere in your home, and they are always careful with your walls and floors.",
     iconName: "Sofa",
     imageUrl: "/src/assets/images/junk_removal_furniture_1782588872739.jpg",
     commonItems: ["Sofas & Couches", "Mattresses", "Desks & Tables", "Dressers & Wardrobes"],
@@ -27,9 +27,9 @@ export const SERVICES_LIST: ServiceItem[] = [
     id: "appliances",
     title: "Appliance Recycling",
     shortDesc: "Refrigerators, washers, dryers, and electronics.",
-    fullDesc: "Need to get rid of old appliances? We haul them away safely and make sure they get recycled properly. Don't risk your back—let us handle the heavy lifting.",
+    fullDesc: "Need to get rid of old appliances? Marco and Ian haul them away safely and make sure they get recycled properly. Don't risk your back—let them handle the heavy lifting.",
     iconName: "Monitor",
-    imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/src/assets/images/appliance_recycling_1782589086141.jpg",
     commonItems: ["Refrigerators & Freezers", "Washers & Dryers", "Stoves & Ovens", "TVs & Electronics"],
     startingPrice: "$50+"
   },
@@ -37,9 +37,9 @@ export const SERVICES_LIST: ServiceItem[] = [
     id: "yard-waste",
     title: "Yard Waste Removal",
     shortDesc: "Branches, clippings, fencing, and outdoor debris.",
-    fullDesc: "Need your yard cleared? We haul off branches, clippings, and old fencing so you can actually use your space again.",
+    fullDesc: "Need your yard cleared? Marco and Ian haul off branches, clippings, and old fencing so you can actually use your space again.",
     iconName: "Leaf",
-    imageUrl: "https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/src/assets/images/yard_waste_1782589096551.jpg",
     commonItems: ["Tree Branches", "Grass & Leaves", "Old Fencing", "Sheds & Decking"],
     startingPrice: "$75+"
   },
@@ -47,9 +47,9 @@ export const SERVICES_LIST: ServiceItem[] = [
     id: "cleanouts",
     title: "Full Cleanouts",
     shortDesc: "Garages, basements, estates, and offices.",
-    fullDesc: "Garage or basement packed with junk? We’ll clear it out for you, fast.",
+    fullDesc: "Garage or basement packed with junk? Marco and Ian will clear it out for you, fast.",
     iconName: "Box",
-    imageUrl: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/src/assets/images/cleanout_photo_1782589108341.jpg",
     commonItems: ["Garage Cleanouts", "Estate Cleanouts", "Storage Units", "Office Furniture"],
     startingPrice: "$150+"
   },
@@ -57,9 +57,9 @@ export const SERVICES_LIST: ServiceItem[] = [
     id: "construction",
     title: "Construction Debris",
     shortDesc: "Wood, drywall, tile, and remodeling waste.",
-    fullDesc: "Renovating? We take care of the drywall, wood, and leftover mess so you can enjoy the finished space.",
+    fullDesc: "Renovating? Marco and Ian take care of the drywall, wood, and leftover mess so you can enjoy the finished space.",
     iconName: "Hammer",
-    imageUrl: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/src/assets/images/construction_debris_1782589117287.jpg",
     commonItems: ["Drywall & Wood", "Tile & Flooring", "Pallets", "Remodeling Waste"],
     startingPrice: "$100+"
   }
@@ -78,7 +78,7 @@ export const SERVICE_AREAS_TOWNS = [
 export const FAQ_QUESTIONS: FaqItem[] = [
   {
     question: "How do you price your junk removal services?",
-    answer: "Our pricing is volume-based, meaning you only pay for the amount of space your items take up in our truck. Prices include labor, hauling, and disposal fees. We provide a firm estimate on-site before we begin any work.",
+    answer: "Our pricing is volume-based, meaning you only pay for the amount of space your items take up. Prices include labor, hauling, and disposal fees. We provide a firm estimate on-site before we begin any work.",
     category: "Pricing"
   },
   {
