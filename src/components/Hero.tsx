@@ -113,25 +113,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
           >
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
-              {/* Main Photo Placeholder */}
-              <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-navy aspect-4/3 sm:aspect-square relative flex items-center justify-center p-8 group">
-                <div className="text-center flex flex-col items-center justify-center">
-                  <Truck className="w-24 h-24 text-orange-highlight mb-4" />
-                  <h2 className="text-3xl font-black text-white mb-2">{BUSINESS_INFO.name}</h2>
-                  <p className="text-lg text-emerald-100 font-medium">Ready for your call.</p>
-                </div>
-                
-                {/* Overlay Badge */}
-                <div className="absolute bottom-6 left-6 right-6 text-white text-left">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="bg-orange-highlight text-white font-black text-xs px-2.5 py-1 rounded-md uppercase tracking-wider">
-                      Local Business
-                    </span>
-                  </div>
-                  <p className="text-base sm:text-lg font-black leading-snug text-white">
-                    {BUSINESS_INFO.phoneDisplay}
-                  </p>
-                </div>
+              <div className="rounded-3xl shadow-2xl border-4 border-white bg-white aspect-4/3 sm:aspect-square relative flex flex-col p-8 justify-center">
+                 <div className="text-navy font-black text-2xl mb-6">Simple Pricing</div>
+                 <div className="space-y-4 text-neutral-dark font-medium text-sm">
+                   <div className="flex justify-between border-b border-gray-100 pb-3"><span>Single Item</span><span className="font-bold">From $50</span></div>
+                   <div className="flex justify-between border-b border-gray-100 pb-3"><span>Half Truck</span><span className="font-bold">$150+</span></div>
+                   <div className="flex justify-between pb-3"><span>Full Truck</span><span className="font-bold">$300+</span></div>
+                 </div>
+                 <a href={`tel:${BUSINESS_INFO.phone}`} className="mt-8 bg-orange-highlight text-white text-center py-4 rounded-xl font-black shadow-md hover:bg-orange-hover transition">Call {BUSINESS_INFO.phoneDisplay}</a>
               </div>
 
               {/* Floating Badge 1: Upfront Pricing */}

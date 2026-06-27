@@ -89,18 +89,18 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     Starts at {service.startingPrice}
                   </div>
                 )}
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                <p className="text-gray-800 text-sm leading-relaxed mb-4">
                   {service.fullDesc}
                 </p>
 
                 {/* Common Items Checkpoints */}
                 {service.commonItems.length > 0 && (
                   <div className="space-y-2 my-4 py-3 border-t border-b border-gray-200/80">
-                    <div className="text-xs font-extrabold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-1">
+                    <div className="text-xs font-extrabold text-gray-500 uppercase tracking-wider mb-2 flex items-center gap-1">
                       <Recycle className="w-3.5 h-3.5 text-navy" /> Common Items Hauled:
                     </div>
                     {service.commonItems.map((item, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-xs font-bold text-gray-700">
+                      <div key={idx} className="flex items-center gap-2 text-xs font-bold text-gray-800">
                         <CheckCircle2 className="w-4 h-4 text-orange-highlight shrink-0" />
                         <span>{item}</span>
                       </div>

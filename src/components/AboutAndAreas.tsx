@@ -25,7 +25,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               className="lg:col-span-7 text-left space-y-6"
             >
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-100 text-[#0A3D2A] text-xs font-black uppercase tracking-wider">
-                <Mountain className="w-3.5 h-3.5 text-[#00BFA5]" /> Who We Are
+                <Mountain className="w-3.5 h-3.5 text-orange-highlight" /> Who We Are
               </div>
               <h2 className="text-3xl sm:text-5xl font-display font-black text-[#1F2937] tracking-tight">
                 About Cascade Junk Removal
@@ -86,10 +86,14 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
               transition={{ delay: 0.3, duration: 0.6 }}
               className="lg:col-span-5 relative"
             >
-              <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-navy aspect-4/3 relative flex flex-col items-center justify-center p-8 text-center">
-                 <Mountain className="w-24 h-24 text-orange-highlight mb-4" />
-                 <h2 className="text-3xl font-black text-white mb-2">Locally Owned</h2>
-                 <p className="text-emerald-100 font-medium">Serving the Wenatchee Valley Since 2026</p>
+              <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-navy aspect-square relative flex flex-col items-center justify-center p-8 text-center">
+                 <Truck className="w-16 h-16 text-orange-highlight mb-6" />
+                 <h3 className="text-2xl font-black text-white mb-4">Pricing Made Simple</h3>
+                 <div className="space-y-3 text-emerald-100 font-medium text-sm">
+                   <p>Single Item: From $50</p>
+                   <p>Half Truckload: $150+</p>
+                   <p>Full Truckload: $300+</p>
+                 </div>
               </div>
             </motion.div>
 
@@ -110,7 +114,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
             className="max-w-3xl mx-auto mb-12"
           >
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-white text-[#0A3D2A] text-xs font-black uppercase tracking-wider mb-3 border border-gray-200 shadow-2xs">
-              <MapPin className="w-3.5 h-3.5 text-[#00BFA5]" /> Where We Haul
+              <MapPin className="w-3.5 h-3.5 text-orange-highlight" /> Where We Haul
             </div>
             <h2 className="text-3xl sm:text-5xl font-display font-black text-[#1F2937] tracking-tight">
               Cascade Towns & Communities We Serve
@@ -131,7 +135,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
                 transition={{ delay: idx * 0.05, duration: 0.3 }}
                 className="bg-white hover:bg-[#0A3D2A] p-4 rounded-2xl border border-gray-200 hover:border-[#0A3D2A] shadow-2xs hover:shadow-lg transition flex items-center justify-center gap-2 group cursor-pointer"
               >
-                <MapPin className="w-4 h-4 text-[#00BFA5] group-hover:scale-125 transition-transform shrink-0" />
+                <MapPin className="w-4 h-4 text-orange-highlight group-hover:scale-125 transition-transform shrink-0" />
                 <span className="font-extrabold text-[#1F2937] text-sm group-hover:text-white transition-colors">{town}</span>
               </motion.div>
             ))}
@@ -148,7 +152,7 @@ export const AboutAndAreas: React.FC<AboutAndAreasProps> = ({ onOpenBooking }) =
             <span className="text-sm font-bold text-[#1F2937]">Same-Day dispatch available across all Cascade towns:</span>
             <a
               href={`tel:${BUSINESS_INFO.phone}`}
-              className="bg-[#00BFA5] hover:bg-[#00a891] text-gray-950 font-black px-6 py-3.5 rounded-xl shadow-md hover:shadow-lg transition text-sm cursor-pointer uppercase tracking-wider flex items-center gap-2"
+              className="bg-orange-highlight hover:bg-orange-hover text-white font-black px-6 py-3.5 rounded-xl shadow-md hover:shadow-lg transition text-sm cursor-pointer uppercase tracking-wider flex items-center gap-2"
             >
               <PhoneCall className="w-4 h-4" /> Call Now
             </a>

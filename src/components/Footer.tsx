@@ -30,16 +30,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
             </p>
 
             <div className="space-y-2 pt-2">
-              <a href={`tel:${BUSINESS_INFO.phone}`} className="flex items-center gap-2.5 text-white font-black hover:text-navy transition text-base">
+              <a href={`tel:${BUSINESS_INFO.phone}`} className="flex items-center gap-2.5 text-white font-black hover:text-orange-highlight transition text-base">
                 <Phone className="w-4 h-4 text-navy fill-current" />
                 <span>{BUSINESS_INFO.phoneDisplay}</span>
               </a>
-              <a href={`mailto:${BUSINESS_INFO.email}`} className="flex items-center gap-2.5 text-sm text-gray-300 hover:text-navy transition font-medium">
+              <a href={`mailto:${BUSINESS_INFO.email}`} className="flex items-center gap-2.5 text-sm text-gray-300 hover:text-orange-highlight transition font-medium">
                 <Mail className="w-4 h-4 text-navy" />
                 <span>{BUSINESS_INFO.email}</span>
               </a>
               {BUSINESS_INFO.instagram && (
-                <a href={`https://instagram.com/${BUSINESS_INFO.instagram}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-gray-300 hover:text-navy transition font-medium">
+                <a href={`https://instagram.com/${BUSINESS_INFO.instagram}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-sm text-gray-300 hover:text-orange-highlight transition font-medium">
                   <Instagram className="w-4 h-4 text-navy" />
                   <span>@{BUSINESS_INFO.instagram}</span>
                 </a>
@@ -55,7 +55,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
                 <li key={srv.id}>
                   <button 
                     onClick={() => onOpenBooking(srv.title)}
-                    className="hover:text-navy transition text-left cursor-pointer font-medium text-gray-300"
+                    className="hover:text-orange-highlight transition text-left cursor-pointer font-medium text-gray-300"
                   >
                     {srv.title}
                   </button>
@@ -76,7 +76,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onScrollTo }) => 
                 <li key={lnk.id}>
                   <button 
                     onClick={() => onScrollTo(lnk.id)}
-                    className="hover:text-navy transition text-left cursor-pointer font-medium text-gray-300"
+                    className="hover:text-orange-highlight transition text-left cursor-pointer font-medium text-gray-300"
                   >
                     {lnk.label}
                   </button>

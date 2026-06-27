@@ -20,7 +20,8 @@ export const SERVICES_LIST: ServiceItem[] = [
     fullDesc: "Got an old couch or heavy mattress you need gone? We carefully remove all types of furniture from anywhere in your home, ensuring no damage to your walls or floors.",
     iconName: "Sofa",
     imageUrl: "https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?auto=format&fit=crop&w=600&q=80",
-    commonItems: ["Sofas & Couches", "Mattresses", "Desks & Tables", "Dressers & Wardrobes"]
+    commonItems: ["Sofas & Couches", "Mattresses", "Desks & Tables", "Dressers & Wardrobes"],
+    startingPrice: "$75+"
   },
   {
     id: "appliances",
@@ -29,7 +30,8 @@ export const SERVICES_LIST: ServiceItem[] = [
     fullDesc: "We haul away heavy appliances safely and responsibly recycle them. Don't risk hurting your back—let our professional team handle the heavy lifting.",
     iconName: "Monitor",
     imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80",
-    commonItems: ["Refrigerators & Freezers", "Washers & Dryers", "Stoves & Ovens", "TVs & Electronics"]
+    commonItems: ["Refrigerators & Freezers", "Washers & Dryers", "Stoves & Ovens", "TVs & Electronics"],
+    startingPrice: "$50+"
   },
   {
     id: "yard-waste",
@@ -38,7 +40,8 @@ export const SERVICES_LIST: ServiceItem[] = [
     fullDesc: "Reclaim your backyard! We remove tree branches, grass clippings, old fencing, and other landscaping debris so you can enjoy your outdoor space again.",
     iconName: "Leaf",
     imageUrl: "https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&w=600&q=80",
-    commonItems: ["Tree Branches", "Grass & Leaves", "Old Fencing", "Sheds & Decking"]
+    commonItems: ["Tree Branches", "Grass & Leaves", "Old Fencing", "Sheds & Decking"],
+    startingPrice: "$75+"
   },
   {
     id: "cleanouts",
@@ -47,7 +50,8 @@ export const SERVICES_LIST: ServiceItem[] = [
     fullDesc: "Overwhelmed by a cluttered space? We offer comprehensive cleanout services for garages, basements, storage units, and entire estates.",
     iconName: "Box",
     imageUrl: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80",
-    commonItems: ["Garage Cleanouts", "Estate Cleanouts", "Storage Units", "Office Furniture"]
+    commonItems: ["Garage Cleanouts", "Estate Cleanouts", "Storage Units", "Office Furniture"],
+    startingPrice: "$150+"
   },
   {
     id: "construction",
@@ -56,7 +60,8 @@ export const SERVICES_LIST: ServiceItem[] = [
     fullDesc: "Finished a renovation? We clean up the aftermath. We haul away drywall, wood, tile, and other non-hazardous construction debris from your job site.",
     iconName: "Hammer",
     imageUrl: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=600&q=80",
-    commonItems: ["Drywall & Wood", "Tile & Flooring", "Pallets", "Remodeling Waste"]
+    commonItems: ["Drywall & Wood", "Tile & Flooring", "Pallets", "Remodeling Waste"],
+    startingPrice: "$100+"
   }
 ];
 

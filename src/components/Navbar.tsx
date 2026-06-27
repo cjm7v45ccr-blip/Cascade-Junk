@@ -158,7 +158,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onScrollTo }) => 
           <div className="flex flex-col gap-2.5 pt-3 border-t border-gray-100">
             <a
               href={`tel:${BUSINESS_INFO.phone}`}
-              className="w-full flex items-center justify-center gap-2 py-3 bg-[#00BFA5] text-gray-950 font-black rounded-xl text-sm shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-3 bg-navy text-white font-black rounded-xl text-sm shadow-sm"
             >
               <Phone className="w-4 h-4 fill-current" />
               <span>Call Now: {BUSINESS_INFO.phoneDisplay}</span>
