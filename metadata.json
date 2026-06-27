@@ -1,0 +1,6 @@
+{
+  "name": "Fast Haul Junk Removal",
+  "description": "Fast, affordable residential and commercial junk removal services with instant AI quote estimation, upfront pricing, and eco-friendly disposal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
