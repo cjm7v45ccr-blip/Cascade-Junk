@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { TrustBar } from './components/TrustBar';
 import { ServicesSection } from './components/ServicesSection';
 import { AboutAndAreas } from './components/AboutAndAreas';
 import { TestimonialsSection } from './components/TestimonialsSection';
@@ -67,6 +68,8 @@ export default function App() {
           onOpenBooking={() => handleOpenBooking()} 
           onScrollTo={scrollToSection} 
         />
+
+        <TrustBar />
 
         <ServicesSection 
           onSelectService={() => handleOpenBooking()} 
