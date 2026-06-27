@@ -146,12 +146,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 sm:p-4 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3"
               >
-                <div className="bg-[#0A3D2A] text-[#00BFA5] p-2.5 rounded-xl">
+                <div className="bg-navy-dark text-orange-highlight p-2.5 rounded-xl">
                   <Clock className="w-6 h-6" />
                 </div>
                 <div className="text-left">
                   <div className="text-xs font-bold text-gray-500">HOURS</div>
-                  <div className="text-sm font-black text-[#1F2937]">Mon-Fri 10AM-5PM</div>
+                  <div className="text-sm font-black text-neutral-dark">Mon-Fri 10AM-5PM</div>
                 </div>
               </motion.div>
 
@@ -160,13 +160,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onScrollTo }) => {
                 initial={{ y: 0 }}
                 animate={{ y: [0, 10, 0] }}
                 transition={{ delay: 2, duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-6 -right-4 sm:-right-6 bg-[#0A3D2A] text-white p-3.5 sm:p-4 rounded-2xl shadow-2xl border border-emerald-900 flex items-center gap-3"
+                className="absolute -bottom-6 -right-4 sm:-right-6 bg-navy text-white p-3.5 sm:p-4 rounded-2xl shadow-2xl border border-navy-dark flex items-center gap-3"
               >
-                <div className="bg-[#00BFA5] text-gray-950 p-2.5 rounded-xl font-bold">
+                <div className="bg-orange-highlight text-white p-2.5 rounded-xl font-bold">
                   <PhoneCall className="w-6 h-6" />
                 </div>
                 <div className="text-left">
-                  <div className="text-xs font-bold text-[#00BFA5]">CONTACT US</div>
+                  <div className="text-xs font-bold text-orange-highlight">CONTACT US</div>
                   <div className="text-sm font-black">509-433-4493</div>
                 </div>
               </motion.div>
